@@ -9,7 +9,7 @@ cat oracle-xe-11.2.0-1.0.x86_64.rpm.zip.* > oracle-xe-11.2.0-1.0.x86_64.rpm.zip
 
 export ORACLE_FILE="oracle-xe-11.2.0-1.0.x86_64.rpm.zip"
 export ORACLE_HOME="/u01/app/oracle/product/11.2.0/xe"
-export ORACLE_SID=XE
+export ORACLE_SID=ORCL
 
 # make sure that hostname is found from hosts (or oracle installation will fail)
 ping -c1 $(hostname) || echo 127.0.0.1 $(hostname) | sudo tee -a /etc/hosts
